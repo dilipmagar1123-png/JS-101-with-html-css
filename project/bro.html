@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* box size border-box ensures that padding and border are included in the element's total width and height */
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+
+        padding: 10px 50px;
+        background-color: #f8f9fa;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .header-logo img {
+        height: 50px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1em; /* 16px * 1.1 = 19.2px */
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        color: #646464;
+      }
+      .header-button {
+        display: flex;
+
+        align-items: center;
+        gap: 60px;
+      }
+      .register-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgb(33, 56, 105);
+        padding: 5px 12px;
+        background-color: #03254c;
+        font-weight: bold;
+        color: white;
+        transition: all 0.3s ease-in-out;
+      }
+      a svg {
+        width: 10px;
+        height: 10px;
+        fill: #646464;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img
+          src="https://i0.wp.com/letslearn.asia/wp-content/uploads/2024/09/letslearn-new-logo.png?w=912&ssl=1"
+          alt=""
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <!-- anker tag is used to create hyperlinks in HTML which allow users to navigate from one page to another or to different sections within the same page. -->
+          <!-- target="_blank" is used to open the linked document in a new tab or window. -->
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Courses</a></li>
+          <li class="nav-event">
+            <a href="#"
+              >Events
+              <svg
+                aria-hidden="true"
+                class="e-font-icon-svg e-fas-caret-down"
+                viewBox="0 0 320 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">Blog </a>
+          </li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-button">
+        <span>+977 9841117580</span>
+        <a href="#" class="register-btn">Register</a>
+      </div>
+    </header>
+    <main></main>
+  </body>
+  <script>
+    const NavEvent = document.querySelector(".nav-event");
+    console.log(NavEvent);
+    NavEvent.addEventListener("mouseover", clickEvent);
+    function clickEvent() {
+      alert("You clicked on Events");
+    }
+  </script>
+</html>
