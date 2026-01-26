@@ -112,5 +112,20 @@ console.log(factorial4(7));
   console.log(`IIFE executed for ${name}`);
 })("Saugat");
 
-//Hw // 1. Write a function to calculate the factorial of a number.
 // 2. Write a function to find the largest number in an array.
+const numbersArray = [3, 5, 7, 2, 8, 1, 4];
+
+function findLargestNumber(arr) { 
+  let largest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    } 
+
+
+  }
+
+  return largest;
+}console.log(findLargestNumber(numbersArray)); // Output: 8
+console.log(numbersArray);
+console.log(...numbersArray);
