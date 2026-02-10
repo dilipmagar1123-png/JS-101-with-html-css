@@ -111,8 +111,8 @@ let isRunning = false;
 
 const display = document.getElementById("display");
 const startBtn = document.getElementById("start");
-const pauseBtn = document.getElementById("pause");
-const resetBtn = document.getElementById("stop");
+const pauseBtn = document.getElementById("stop");
+const resetBtn = document.getElementById("reset");
 
 function runStopwatch() {
   milliseconds += 10;
@@ -152,8 +152,10 @@ startBtn.addEventListener("click", () => {
 });
 
 pauseBtn.addEventListener("click", () => {
-  clearInterval(timer);
-  isRunning = false;
+  if (isRunning) {
+    clearInterval(timer);
+    isRunning = false;
+  }
 });
 
 resetBtn.addEventListener("click", () => {
