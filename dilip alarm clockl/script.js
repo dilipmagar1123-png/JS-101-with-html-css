@@ -111,8 +111,8 @@ let isRunning = false;
 
 const display = document.getElementById("display");
 const startBtn = document.getElementById("start");
-const pauseBtn = document.getElementById("stop");
-const resetBtn = document.getElementById("reset");
+const pauseBtn = document.getElementById("pause");
+const resetBtn = document.getElementById("stop");
 
 function runStopwatch() {
   milliseconds += 10;
