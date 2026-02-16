@@ -1,28 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Anime Guess Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="overlay">
-    <div class="game-box">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="game-box">
         <h1>🎌 Anime Character Guess</h1>
 
         <div id="wordDisplay" class="word"></div>
 
-        <input type="text" id="letterInput" maxlength="1" placeholder="Enter letter">
         <button id="guessBtn">Guess</button>
 
         <p class="attempts">Attempts Left: <span id="attemptCount">3</span></p>
         <p id="message"></p>
 
         <button id="restartBtn" class="restart">Restart Game</button>
+      </div>
     </div>
-</div>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
