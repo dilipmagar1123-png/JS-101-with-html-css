@@ -107,6 +107,17 @@ document.getElementById("restartBtn").addEventListener("click", () => {
     document.getElementById("guessBtn").disabled = false;
     startGame();
 });
+document.getElementById("NextBtn").addEventListener("click", () => {
+    document.getElementById("guessBtn").disabled = false;
+    updateDisplay()
+    startGame();
+});
+document.getElementById("letterInput").addEventListener("keypress", (e)=>{
+    if(e.key === "Enter"){
+        checkGuess()
+    }
+})
+
 
 // Start game when page loads
 startGame();
